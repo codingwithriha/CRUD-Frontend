@@ -31,13 +31,13 @@ const CreateUser = () => {
                 </div>
                 <div className='mb-2'>
                     <label htmlFor='name'>Email</label>
-                    <input type='text' className='form-control' placeholder='Enter Name'
+                    <input type='text' className='form-control' placeholder='Enter Email'
                     onChange={(e) => setEmail(e.target.value)}
                     />
                 </div>
                 <div className='mb-2'>
                     <label htmlFor='name'>Age</label>
-                    <input type='text' className='form-control' placeholder='Enter Name' 
+                    <input type='text' className='form-control' placeholder='Enter Age' 
                     onChange={(e) => setAge(e.target.value)}
                     />
                 </div>
