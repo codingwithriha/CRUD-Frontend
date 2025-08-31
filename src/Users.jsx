@@ -13,7 +13,7 @@ const Users = () => {
     }, [])
 
     const handleDelete = (id) => {
-        axios.delete('http://localhost:3001/deleteUser/' + id)
+        axios.delete('https://crud-backend-eta-eight.vercel.app/deleteUser/' + id)
         .then(result => {
             console.log(result)
             window.location.reload();
