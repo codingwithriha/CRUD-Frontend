@@ -7,7 +7,7 @@ const Users = () => {
     const [users, setUsers] = useState([])
 
     useEffect(() => {
-        axios.get('https://crud-backend-eta-eight.vercel.app/')
+        axios.get('https://crud-backend-eta-eight.vercel.app')
         .then(result => setUsers(result.data))
         .catch(err => console.log(err))
     }, [])
