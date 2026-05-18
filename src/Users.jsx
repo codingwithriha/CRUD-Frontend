@@ -7,13 +7,13 @@ const Users = () => {
     const [users, setUsers] = useState([])
 
     useEffect(() => {
-        axios.get('https://crud-backend-eta-eight.vercel.app')
+        axios.get('https://crud-backend-production-658e.up.railway.app')
         .then(result => setUsers(result.data))
         .catch(err => console.log(err))
     }, [])
 
     const handleDelete = (id) => {
-        axios.delete('https://crud-backend-eta-eight.vercel.app/deleteUser/' + id)
+        axios.delete('https://crud-backend-production-658e.up.railway.app/deleteUser/' + id)
         .then(result => {
             console.log(result)
             window.location.reload();
