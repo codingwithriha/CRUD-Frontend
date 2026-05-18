@@ -12,7 +12,7 @@ const UpdateUser = () => {
     const navigate = useNavigate();
     
     useEffect(() => {
-            axios.get('https://crud-backend-eta-eight.vercel.app/getUser/'+id)
+            axios.get('https://crud-backend-production-658e.up.railway.app/getUser/'+id)
             .then(result => {
                 console.log(result)
                 setName(result.data.name)
@@ -24,7 +24,7 @@ const UpdateUser = () => {
 
         const Update = (e) =>{
             e.preventDefault();
-            axios.put('https://crud-backend-eta-eight.vercel.app/updateUser/'+id, {name, email, age})
+            axios.put('https://crud-backend-production-658e.up.railway.app/updateUser/'+id, {name, email, age})
             .then(result => {
                 console.log(result)
                 navigate('/')
