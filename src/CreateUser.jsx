@@ -11,7 +11,7 @@ const CreateUser = () => {
 
     const Submit =(e) =>{
         e.preventDefault();
-        axios.post("https://crud-backend-production-658e.up.railway.app", {name, email, age})
+        axios.post("https://crud-backend-production-658e.up.railway.app/createUser", {name, email, age})
         .then(result => {
             console.log(result)
             navigate('/')
